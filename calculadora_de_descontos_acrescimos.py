@@ -1,20 +1,25 @@
-print("-------------------------------------MENU-------------------------------------")
+def menu():
 
-print("Bem-vindo ao site Cálculos de: desconto, acréscimo e descoberta de porcentagem.")
-print("                                                                              ")
+ print("-------------------------------------MENU-------------------------------------")
 
-print("Lembre-se de inserir apenas o número. Por exemplo, para calcular o desconto, digite 1.")
-print("                                                                              ")
+ print("Bem-vindo ao site Cálculos de: desconto, acréscimo e descoberta de porcentagem.")
+ print("                                                                              ")
 
-print("Por favor, informe qual das opções você deseja:")
-print("1 - Desconto")
-print("2 - Acrécimo")
-print("3 - Descoberta de porcentagem")
-print("------------------------------------------------------------------------------")
+ print("Lembre-se de inserir apenas o número. Por exemplo, para calcular o desconto, digite 1.")
+ print("                                                                              ")
+
+ print("Por favor, informe qual das opções você deseja:")
+ print("1 - Desconto")
+ print("2 - Acrécimo")
+ print("3 - Descoberta de porcentagem")
+ print("------------------------------------------------------------------------------")
+
+menu()
 
 x = int(input("Digite o número da sua opção: "))
 
 if x == 1:
+ 
  def desconto():
 
     print("                                                                              ")
@@ -27,7 +32,7 @@ if x == 1:
 
     parte = (percentual / 100) * total
     valor_com_desconto = total - parte
-    3
+    
     print("------------------------------------------------------------------------------")
 
     print('O valor do desconto é:', parte)
@@ -39,9 +44,10 @@ if x == 1:
     print("------------------------------------------------------------------------------")
 
  desconto()
-
+ 
 elif x == 2:
-  def acrecimo():
+ 
+ def acrescimo():
 
     print("                                                                              ")
     
@@ -60,11 +66,11 @@ elif x == 2:
 
     print("------------------------------------------------------------------------------")
 
-  acrecimo()
+ acrescimo()
 
 elif x == 3:
   
-  def descobrir_porcentagem():
+ def descobrir_porcentagem():
     
     print("                                                                              ")
 
@@ -84,5 +90,11 @@ elif x == 3:
 
     print("------------------------------------------------------------------------------")
 
-  descobrir_porcentagem()
+ descobrir_porcentagem()
+
+else:
+  
+  print("                                                                              ")
+  print('Opção invalida! Por favor tente novamente.')
+  print("                                                                              ")
 
